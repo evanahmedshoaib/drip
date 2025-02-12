@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #EDEDED;
+            color: #EDEDED;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+        .loading-screen {
+            text-align: center;
+        }
+        .logo {
+            width: 500px;
+            height: auto;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "https://www.facebook.com/youaredripping";
+            }, 3);
+        };
+    </script>
+</head>
+<body>
+<div class="loading-screen">
+    <img src="logo.png" alt="Logo" class="logo">
+</div>
+</body>
+</html>
